@@ -1,0 +1,46 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "google",
+        "plugin:import/typescript",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "plugins": ["react", "@typescript-eslint", "prettier"],
+    "rules": {
+        "require-jsdoc": 0,
+        "no-unused-vars": [
+            "warn",
+            {
+                "vars": "all"
+            }
+        ],
+        "react/jsx-filename-extension": [
+            "warn",
+            {
+                "extensions": [".tsx"]
+            }
+        ],
+        "react/jsx-uses-react": ["off"],
+        "react/react-in-jsx-scope": ["off"],
+        "react/jsx-props-no-spreading": ["warn"]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}

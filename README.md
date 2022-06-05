@@ -16,6 +16,7 @@ With typescript support and already configured :
 ```sh
 git clone https://github.com/Rufat00/My-React-Template [app-name]
 cd app-name
+npm intsall || yarn install
 ```
 
 ## Todo
